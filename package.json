@@ -2,25 +2,32 @@
   "name": "quicklook-thumbnail",
   "version": "1.0.0",
   "description": "Use NodeJS to generate thumbnail images for all QuickLook-enabled filetypes (e.g. .mp4 videos, iMessage transcripts, text files) on Apple OSX.",
+  "license": "MIT",
   "main": "index.js",
   "author": {
-      "name": "Sidney Bofah",
-      "email": "sidney.bofah@googlemail.com"
+    "name": "Sidney Bofah",
+    "email": "sidney.bofah@googlemail.com"
   },
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sidneys/quicklook-thumbnail.git"
+  },
   "bugs": {
     "url": "https://github.com/sidneys/quicklook-thumbnail/issues"
   },
   "homepage": "https://github.com/sidneys/quicklook-thumbnail#readme",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter mocha-better-spec-reporter"
+  },
   "keywords": [
-      "quicklook",
-      "thumbnail",
-      "video",
-      "image",
-      "mp4"
+    "quicklook",
+    "thumbnail",
+    "video",
+    "image",
+    "mp4"
   ],
   "dependencies": {
-        "npm-which": "^2.0.0"
+    "npm-which": "^2.0.0"
   },
   "engines": {
     "node": ">=4.0.0"

@@ -43,7 +43,7 @@
  * @param {Object} imageOptions - Maximum width of the generated images in pixels (Default: 512)
  * @param {imageCallback} imageCallback - Called with result when process terminates
  */
-var create = function(targetFilepath, imageOptions, imageCallback) {
+var create = function(targetFilepath, imageOptions /* imageCallback*/) {
 
     // Break early on missing filepath
     if (!targetFilepath || typeof targetFilepath !== 'string') {
